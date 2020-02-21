@@ -14,7 +14,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
-import kjd.yahoo.fantasy.data.User;
+import kjd.yahoo.fantasy.data.user.User;
 import kjd.yahoo.fantasy.data.xml.YahooModule;
 
 public class UserDeserializationTest extends ResourceDeserializationTest {

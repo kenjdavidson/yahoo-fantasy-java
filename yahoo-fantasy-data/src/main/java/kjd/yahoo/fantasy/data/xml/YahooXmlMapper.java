@@ -1,6 +1,6 @@
 package kjd.yahoo.fantasy.data.xml;
 
-import com.fasterxml.jackson.core.JsonGenerator.Feature;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
 public class YahooXmlMapper extends XmlMapper {
@@ -14,6 +14,6 @@ public class YahooXmlMapper extends XmlMapper {
 		
 		this.registerModule(new YahooModule());
 		
-		this.configure(Feature.IGNORE_UNKNOWN, true);
+		this.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 	}
 }

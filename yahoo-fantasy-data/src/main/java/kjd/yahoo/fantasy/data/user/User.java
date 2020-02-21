@@ -1,4 +1,4 @@
-package kjd.yahoo.fantasy.data;
+package kjd.yahoo.fantasy.data.user;
 
 import lombok.Getter;
 import lombok.Setter;

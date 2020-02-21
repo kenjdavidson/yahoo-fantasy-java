@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fantasy_content xml:lang="en-US" yahoo:uri="http://fantasysports.yahooapis.com/fantasy/v2/users;use_login=1/games;game_keys=396,371" time="81.743001937866ms" copyright="Data provided by Yahoo! and STATS, LLC" refresh_rate="60" xmlns:yahoo="http://www.yahooapis.com/v1/base.rng" xmlns="http://fantasysports.yahooapis.com/fantasy/v2/base.rng">
+	<games count="2">
+	    <game>
+	        <game_key>396</game_key>
+	        <game_id>396</game_id>
+	        <name>Hockey</name>
+	        <code>nhl</code>
+	        <type>full</type>
+	        <url>https://hockey.fantasysports.yahoo.com/hockey</url>
+	        <season>2019</season>
+	        <is_registration_over>0</is_registration_over>
+	        <is_game_over>0</is_game_over>
+	        <is_offseason>0</is_offseason>
+	    </game>
+	    <game>
+	        <game_key>371</game_key>
+	        <game_id>371</game_id>
+	        <name>Football</name>
+	        <code>nfl</code>
+	        <type>full</type>
+	        <url>https://football.fantasysports.yahoo.com/archive/nfl/2017</url>
+	        <season>2017</season>
+	        <is_registration_over>1</is_registration_over>
+	        <is_game_over>1</is_game_over>
+	        <is_offseason>1</is_offseason>
+	    </game>
+	</games>
+</fantasy_content>
+<!-- fantasy-sports-api- -public-production-bf1-f86494cb4-6dbnm Fri Feb 21 19:11:26 UTC 2020 -->

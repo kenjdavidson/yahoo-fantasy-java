@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>kjd.yahoo</groupId>
+		<artifactId>yahoo-fantasy</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	
+	<artifactId>yahoo-fantasy-api</artifactId>
+	<name>yahoo-fantasy-api</name>
+	<url>http://maven.apache.org</url>
+	
+	<properties>
+		<scribe.version>6.9.0</scribe.version>
+		<yahoo.data.version>1.0-SNAPSHOT</yahoo.data.version>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.github.scribejava</groupId>
+			<artifactId>scribejava-core</artifactId>
+			<version>${scribe.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.scribejava</groupId>
+			<artifactId>scribejava-httpclient-okhttp</artifactId>
+			<version>${scribe.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>kjd.yahoo</groupId>
+			<artifactId>yahoo-fantasy-data</artifactId>
+			<version>${yahoo.data.version}</version>
+		</dependency>
+	</dependencies>
+</project>

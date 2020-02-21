@@ -1,4 +1,4 @@
-package kjd.yahoo.fantasy.data;
+package kjd.yahoo.fantasy.data.user;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

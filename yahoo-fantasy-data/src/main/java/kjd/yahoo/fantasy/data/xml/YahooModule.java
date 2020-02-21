@@ -1,8 +1,12 @@
 package kjd.yahoo.fantasy.data.xml;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.module.SimpleModule;
-import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import com.fasterxml.jackson.databind.type.TypeFactory;
 
+import kjd.yahoo.fantasy.data.FantasyContent;
+import kjd.yahoo.fantasy.data.game.Game;
 import kjd.yahoo.fantasy.data.game.GameCode;
 import kjd.yahoo.fantasy.data.game.GameType;
 
@@ -13,9 +17,11 @@ public class YahooModule extends SimpleModule {
 	public YahooModule() {
 		super("YahooFantasyXMLModule");
 		
+		// Yahoo transmits booleans as 1/0 
 		this.addDeserializer(boolean.class, new IntBooleanDeserializer());
 		this.addSerializer(boolean.class, new IntBooleanSerializer());
 		
+		// Enumeration deserializers; it should be possible to make this more generic
 		this.addDeserializer(GameCode.class, new GameCodeDeserializer(GameCode.class));
 		this.addDeserializer(GameType.class, new GameTypeDeserializer(GameType.class));
 	}
