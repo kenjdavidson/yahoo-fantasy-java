@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game>
+	<game_key>371</game_key>
+	<game_id>371</game_id>
+	<name>Football</name>
+	<code>nfl</code>
+	<type>full</type>
+	<url>https://football.fantasysports.yahoo.com/archive/nfl/2017</url>
+	<season>2017</season>
+	<is_registration_over>1</is_registration_over>
+	<is_game_over>1</is_game_over>
+	<is_offseason>1</is_offseason>
+</game>

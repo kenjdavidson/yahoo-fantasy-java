@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <league>
+	<league_key>396.l.3768</league_key>
+	<league_id>3768</league_id>
+	<name>MCS</name>
+	<url>https://hockey.fantasysports.yahoo.com/hockey/3768</url>
+	<logo_url></logo_url>
+	<draft_status>postdraft</draft_status>
+	<num_teams>14</num_teams>
+	<edit_key>2020-02-21</edit_key>
+	<weekly_deadline>intraday</weekly_deadline>
+	<league_update_timestamp>1582271203</league_update_timestamp>
+	<scoring_type>head</scoring_type>
+	<league_type>private</league_type>
+	<renew>386_12376</renew>
+	<renewed />
+	<iris_group_chat_id>PWFRYDQHIJFZBOJNGWCJRGOVYA</iris_group_chat_id>
+	<allow_add_to_dl_extra_pos>1</allow_add_to_dl_extra_pos>
+	<is_pro_league>0</is_pro_league>
+	<is_cash_league>0</is_cash_league>
+	<current_week>19</current_week>
+	<start_week>1</start_week>
+	<start_date>2019-10-02</start_date>
+	<end_week>24</end_week>
+	<end_date>2020-04-04</end_date>
+	<game_code>nhl</game_code>
+	<season>2019</season>
+</league>

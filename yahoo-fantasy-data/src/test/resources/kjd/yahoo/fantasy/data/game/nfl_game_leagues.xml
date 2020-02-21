@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game>
+	<game_key>371</game_key>
+	<game_id>371</game_id>
+	<name>Football</name>
+	<code>nfl</code>
+	<type>full</type>
+	<url>https://football.fantasysports.yahoo.com/archive/nfl/2017</url>
+	<season>2017</season>
+	<is_registration_over>1</is_registration_over>
+	<is_game_over>1</is_game_over>
+	<is_offseason>1</is_offseason>
+	<leagues count="4">
+		<league>
+			<league_key>371.l.22626</league_key>
+			<league_id>22626</league_id>
+			<name>AWKAWESOME FOOTBALL LEAGUE</name>
+			<url>https://football.fantasysports.yahoo.com/archive/nfl/2017/22626</url>
+			<logo_url>https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/29591860190_26c885d4d1.jpg</logo_url>
+			<password />
+			<draft_status>postdraft</draft_status>
+			<num_teams>12</num_teams>
+			<edit_key>16</edit_key>
+			<weekly_deadline />
+			<league_update_timestamp>1515059254</league_update_timestamp>
+			<scoring_type>head</scoring_type>
+			<league_type>private</league_type>
+			<renew>359_3884</renew>
+			<renewed>380_165292</renewed>
+			<iris_group_chat_id>B2GVEKWYDVDJTOYGYGOSAKY5YM</iris_group_chat_id>
+			<short_invitation_url>https://football.fantasysports.yahoo.com/archive/nfl/2017/22626/invitation?key=04fa4fe2bc64ff76&amp;ikey=a4e1b7a986bd5443</short_invitation_url>
+			<allow_add_to_dl_extra_pos>0</allow_add_to_dl_extra_pos>
+			<is_pro_league>0</is_pro_league>
+			<is_cash_league>0</is_cash_league>
+			<current_week>16</current_week>
+			<start_week>1</start_week>
+			<start_date>2017-09-07</start_date>
+			<end_week>16</end_week>
+			<end_date>2017-12-25</end_date>
+			<is_finished>1</is_finished>
+			<game_code>nfl</game_code>
+			<season>2017</season>
+		</league>
+		<league>
+			<league_key>371.l.144966</league_key>
+			<league_id>144966</league_id>
+			<name>MCS Fantasy Football 2017</name>
+			<url>https://football.fantasysports.yahoo.com/archive/nfl/2017/144966</url>
+			<logo_url></logo_url>
+			<draft_status>postdraft</draft_status>
+			<num_teams>16</num_teams>
+			<edit_key>16</edit_key>
+			<weekly_deadline />
+			<league_update_timestamp>1515057172</league_update_timestamp>
+			<scoring_type>head</scoring_type>
+			<league_type>private</league_type>
+			<renew>359_128077</renew>
+			<renewed>380_225920</renewed>
+			<iris_group_chat_id>SOPFAIACKBEZLJ7N355VG3RPMU</iris_group_chat_id>
+			<allow_add_to_dl_extra_pos>1</allow_add_to_dl_extra_pos>
+			<is_pro_league>0</is_pro_league>
+			<is_cash_league>0</is_cash_league>
+			<current_week>16</current_week>
+			<start_week>1</start_week>
+			<start_date>2017-09-07</start_date>
+			<end_week>16</end_week>
+			<end_date>2017-12-25</end_date>
+			<is_finished>1</is_finished>
+			<game_code>nfl</game_code>
+			<season>2017</season>
+		</league>
+		<league>
+			<league_key>371.l.573986</league_key>
+			<league_id>573986</league_id>
+			<name>Fumblerama football</name>
+			<url>https://football.fantasysports.yahoo.com/archive/nfl/2017/573986</url>
+			<logo_url></logo_url>
+			<draft_status>postdraft</draft_status>
+			<num_teams>10</num_teams>
+			<edit_key>16</edit_key>
+			<weekly_deadline />
+			<league_update_timestamp>1515058362</league_update_timestamp>
+			<scoring_type>head</scoring_type>
+			<league_type>private</league_type>
+			<renew>359_144058</renew>
+			<renewed>380_650656</renewed>
+			<iris_group_chat_id>XAWAPQE3F5HRLKV6NPFYNTTDII</iris_group_chat_id>
+			<allow_add_to_dl_extra_pos>0</allow_add_to_dl_extra_pos>
+			<is_pro_league>0</is_pro_league>
+			<is_cash_league>0</is_cash_league>
+			<current_week>16</current_week>
+			<start_week>1</start_week>
+			<start_date>2017-09-07</start_date>
+			<end_week>16</end_week>
+			<end_date>2017-12-25</end_date>
+			<is_finished>1</is_finished>
+			<game_code>nfl</game_code>
+			<season>2017</season>
+		</league>
+		<league>
+			<league_key>371.l.1262678</league_key>
+			<league_id>1262678</league_id>
+			<name>YGA!</name>
+			<url>https://football.fantasysports.yahoo.com/archive/nfl/2017/1262678</url>
+			<logo_url>https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/36904787796_46f8dc.jpg</logo_url>
+			<password />
+			<draft_status>postdraft</draft_status>
+			<num_teams>10</num_teams>
+			<edit_key>16</edit_key>
+			<weekly_deadline />
+			<league_update_timestamp>1515058297</league_update_timestamp>
+			<scoring_type>head</scoring_type>
+			<league_type>private</league_type>
+			<renew />
+			<renewed>380_1055255</renewed>
+			<iris_group_chat_id>XDESSI3CFRE5HGYKD4PH2FSEEY</iris_group_chat_id>
+			<short_invitation_url>https://football.fantasysports.yahoo.com/archive/nfl/2017/1262678/invitation?key=a66c95c75a4e0fba&amp;ikey=e9826410bee23b8e</short_invitation_url>
+			<allow_add_to_dl_extra_pos>1</allow_add_to_dl_extra_pos>
+			<is_pro_league>0</is_pro_league>
+			<is_cash_league>0</is_cash_league>
+			<current_week>16</current_week>
+			<start_week>1</start_week>
+			<start_date>2017-09-07</start_date>
+			<end_week>16</end_week>
+			<end_date>2017-12-25</end_date>
+			<is_finished>1</is_finished>
+			<game_code>nfl</game_code>
+			<season>2017</season>
+		</league>
+	</leagues>
+</game>
