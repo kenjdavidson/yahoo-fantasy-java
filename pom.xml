@@ -75,5 +75,6 @@
 		<url>https://github.com/kenjdavidson/yahoofantasy-data/issues</url>
 	</issueManagement>
 <modules>  <module>yahoo-fantasy-data</module>
+    <module>yahoo-fantasy-api</module>
   </modules>
 </project>
