@@ -4,19 +4,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.io.IOException;
-import java.net.URL;
-
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.deser.DeserializerCache;
-import com.fasterxml.jackson.dataformat.xml.XmlMapper;
-
 import kjd.yahoo.fantasy.data.ResourceDeserializationTest;
 import kjd.yahoo.fantasy.data.game.Game;
-import kjd.yahoo.fantasy.data.xml.YahooModule;
 
 public class GameDeserializationTest extends ResourceDeserializationTest {
 	

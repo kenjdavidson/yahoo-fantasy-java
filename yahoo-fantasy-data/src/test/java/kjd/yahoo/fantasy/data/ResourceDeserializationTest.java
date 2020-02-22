@@ -7,11 +7,9 @@ import org.junit.jupiter.api.BeforeEach;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
-import kjd.yahoo.fantasy.data.xml.YahooModule;
 import kjd.yahoo.fantasy.data.xml.YahooXmlMapper;
 
 public abstract class  ResourceDeserializationTest {

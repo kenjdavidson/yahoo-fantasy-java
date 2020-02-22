@@ -1,12 +1,6 @@
 package kjd.yahoo.fantasy.data.xml;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.module.SimpleModule;
-import com.fasterxml.jackson.databind.type.TypeFactory;
-
-import kjd.yahoo.fantasy.data.game.GameCode;
-import kjd.yahoo.fantasy.data.game.GameType;
 
 public class YahooModule extends SimpleModule {
 

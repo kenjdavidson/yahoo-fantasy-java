@@ -3,8 +3,6 @@ package kjd.yahoo.fantasy.data.game;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonValue;
-
 import kjd.yahoo.fantasy.data.Resource;
 import kjd.yahoo.fantasy.data.league.League;
 import kjd.yahoo.fantasy.data.player.Player;

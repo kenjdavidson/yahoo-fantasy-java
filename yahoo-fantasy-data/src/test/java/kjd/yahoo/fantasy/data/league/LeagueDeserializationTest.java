@@ -3,19 +3,14 @@ package kjd.yahoo.fantasy.data.league;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import java.io.IOException;
 
 import org.junit.jupiter.api.Test;
 
 import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
-import kjd.yahoo.fantasy.data.FantasyContent;
 import kjd.yahoo.fantasy.data.ResourceDeserializationTest;
-import kjd.yahoo.fantasy.data.game.Game;
 import kjd.yahoo.fantasy.data.league.League;
 import kjd.yahoo.fantasy.data.league.LeagueSettings;
 

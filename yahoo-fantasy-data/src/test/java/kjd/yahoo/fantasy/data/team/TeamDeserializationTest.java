@@ -3,8 +3,6 @@ package kjd.yahoo.fantasy.data.team;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.io.IOException;
-import java.net.URL;
-
 import org.junit.jupiter.api.Test;
 
 import com.fasterxml.jackson.core.JsonParseException;
