@@ -1,5 +1,6 @@
 package kjd.yahoo.fantasy.data.game;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import java.io.IOException;
@@ -18,6 +19,14 @@ class GamesCollectionTest extends ResourceDeserializationTest {
 		GamesCollection gc = deserialize("nfl_games_collection.xml", GamesCollection.class);
 				
 		assertNotNull(gc);
+		assertNotNull(gc.getGames());
+		assertEquals(2, gc.getGames().size());
+		
+		Game game = gc.getGames().get(0);
+		assertEquals("396", game.getKey());
+		
+		game = gc.getGames().get(1);
+		assertEquals("371", game.getKey());
 	}
 
 }

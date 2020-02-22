@@ -15,10 +15,15 @@ import kjd.yahoo.fantasy.data.ResourceDeserializationTest;
 class PlayerDeserializationTest extends ResourceDeserializationTest {
 
 	@Test
-	void test_playerDeserialization() throws JsonParseException, JsonMappingException, IOException {
-		Player p = deserialize("player_nhl.xml", Player.class);
+	void player_deserialization() throws JsonParseException, JsonMappingException, IOException {
+		Player p = deserialize("player.xml", Player.class);
 		
 		assertNotNull(p);
+		assertEquals("Alexander Radulov", p.getName().getFull());
+		
+		assertNotNull(p.getPlayerStats());
+		assertNotNull(p.getPlayerStats().getStats());
+		assertEquals(8, p.getPlayerStats().getStats().size());
 	}
 
 }

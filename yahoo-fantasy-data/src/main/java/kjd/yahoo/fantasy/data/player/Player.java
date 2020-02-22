@@ -87,8 +87,4 @@ public class Player implements Resource {
 	
 	private PlayerPoints playerPoints;
 	
-	public String getName() {
-		return name.getFull();
-	}
-	
 }

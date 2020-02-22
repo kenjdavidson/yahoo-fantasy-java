@@ -8,11 +8,11 @@ import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
 
-public class IntBooleanDeserializer extends StdDeserializer<Boolean>{
+public class IntegerBooleanDeserializer extends StdDeserializer<Boolean>{
 
 	private static final long serialVersionUID = -7866671901476034830L;
 
-	public IntBooleanDeserializer() {
+	public IntegerBooleanDeserializer() {
 		super(Boolean.class);
 	}
 	

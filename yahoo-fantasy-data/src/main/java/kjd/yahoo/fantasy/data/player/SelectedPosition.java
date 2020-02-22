@@ -1,7 +1,5 @@
 package kjd.yahoo.fantasy.data.player;
 
-import java.util.Date;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import kjd.yahoo.fantasy.data.Coverage;

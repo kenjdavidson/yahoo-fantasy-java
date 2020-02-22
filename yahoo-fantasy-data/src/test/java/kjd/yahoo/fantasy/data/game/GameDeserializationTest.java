@@ -22,12 +22,12 @@ public class GameDeserializationTest extends ResourceDeserializationTest {
 	
 	@Test
 	public void testDeserialization() throws JsonParseException, JsonMappingException, IOException {
-		Game nfl = deserialize("game_nfl.xml", Game.class);
+		Game nfl = deserialize("nfl_game.xml", Game.class);
 		
 		assertEquals("371", nfl.getKey());
 		assertEquals(371, nfl.getId());
-		assertEquals("nfl", nfl.getCode());
-		assertEquals("full", nfl.getType());
+		assertEquals(GameCode.NFL, nfl.getCode());
+		assertEquals(GameType.FULL, nfl.getType());
 		assertEquals("https://football.fantasysports.yahoo.com/archive/nfl/2017", nfl.getUrl());
 		assertEquals(2017, nfl.getSeason());
 		assertTrue(nfl.isRegistrationOver());

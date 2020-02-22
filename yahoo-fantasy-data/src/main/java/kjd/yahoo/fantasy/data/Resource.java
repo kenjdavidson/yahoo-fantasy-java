@@ -6,5 +6,4 @@ public interface Resource {
 	
 	long getId();
 	
-	String getName();
 }

@@ -1,4 +1,4 @@
-package kjd.yahoo.fantasy.data.league;
+package kjd.yahoo.fantasy.data.scoreboard;
 
 import lombok.Setter;
 
@@ -11,11 +11,12 @@ import lombok.Getter;
 
 @Getter
 @Setter
-public class LeagueScoreboard implements Subresource {
+@Subresource
+public class Scoreboard {
 
 	private int week;
 	
 	@XmlElementWrapper(name="matchups")
-	private List<LeagueMatchup> matchups;
+	private List<Matchup> matchups;
 	
 }

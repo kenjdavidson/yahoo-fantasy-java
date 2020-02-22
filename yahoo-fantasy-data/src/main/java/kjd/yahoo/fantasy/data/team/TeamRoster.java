@@ -14,7 +14,8 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class TeamRoster extends Coverage implements Subresource {
+@Subresource
+public class TeamRoster extends Coverage {
 	
 	@JsonProperty(value="is_editable")
 	private boolean editable;

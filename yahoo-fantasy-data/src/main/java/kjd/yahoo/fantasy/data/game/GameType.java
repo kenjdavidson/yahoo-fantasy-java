@@ -1,26 +1,22 @@
 package kjd.yahoo.fantasy.data.game;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-import kjd.yahoo.fantasy.data.Abbreviated;
-import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
-@Getter
 @RequiredArgsConstructor
-public enum GameType implements Abbreviated<Enum<GameType>> {
+public enum GameType {
 	UNKNOWN(""),
 	FULL("full");
-	
-	public final String abbr;	
-	public static final GameType[] VALUES = GameType.values();
-	
+
 	@JsonValue
-	@JsonCreator
+	public final String abbr;
+	
+	public static final GameType[] VALUES = GameType.values();
+
 	public static GameType fromAbbr(String abbr) {
 		for (GameType code : VALUES) {
-			if (code.getAbbr().equals(abbr)) {
+			if (code.abbr.equals(abbr)) {
 				return code;
 			}
 		}

@@ -1,11 +1,15 @@
 package kjd.yahoo.fantasy.data.league;
 
 import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import kjd.yahoo.fantasy.data.Resource;
+import kjd.yahoo.fantasy.data.Subresource;
+import kjd.yahoo.fantasy.data.scoreboard.Scoreboard;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -30,6 +34,9 @@ import lombok.Setter;
 @Setter
 @Getter
 public class League implements Resource {
+	
+	final String KEY_FORMAT = "^((\\d+)\\.l\\d+).(\\d+)$";
+	final Pattern KEY_PATTERN = Pattern.compile(KEY_FORMAT);
 
 	@JsonProperty(value="league_key")
 	private String key;
@@ -93,4 +100,22 @@ public class League implements Resource {
 	@JsonProperty(value="is_finished")
 	private boolean finished;
 	
+	@Subresource
+	private LeagueSettings settings;
+	
+	@Subresource
+	private LeagueStandings standings;
+	
+	@Subresource
+	private Scoreboard scoreboard;
+	
+	@JsonIgnore
+	public String getGameKey() {
+		Matcher m;
+		if ((m = KEY_PATTERN.matcher(key)).matches()) {
+			return m.group(1);
+		}		
+		throw new IllegalStateException("League key is not valid format");
+	}	
+		
 }

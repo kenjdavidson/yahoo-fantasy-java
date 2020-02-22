@@ -6,9 +6,11 @@ import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 
-public class IntBooleanSerializer extends StdSerializer<Boolean> {
+public class IntegerBooleanSerializer extends StdSerializer<Boolean> {
 
-	public IntBooleanSerializer() {
+	private static final long serialVersionUID = 6460507632440191630L;
+
+	public IntegerBooleanSerializer() {
 		super(Boolean.class);
 	}
 

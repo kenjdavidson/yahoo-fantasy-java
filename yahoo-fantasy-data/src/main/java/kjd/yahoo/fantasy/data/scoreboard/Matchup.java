@@ -1,4 +1,4 @@
-package kjd.yahoo.fantasy.data.league;
+package kjd.yahoo.fantasy.data.scoreboard;
 
 import java.util.Date;
 import java.util.List;
@@ -8,13 +8,15 @@ import javax.xml.bind.annotation.XmlElementWrapper;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import kjd.yahoo.fantasy.data.Subresource;
+import kjd.yahoo.fantasy.data.league.StatWinner;
 import kjd.yahoo.fantasy.data.team.Team;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class LeagueMatchup implements Subresource {
+@Subresource
+public class Matchup {
 	
 	private int week;
 	

@@ -15,7 +15,8 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class LeagueSettings implements Subresource {
+@Subresource
+public class LeagueSettings {
 
 	private String draftType;
 		

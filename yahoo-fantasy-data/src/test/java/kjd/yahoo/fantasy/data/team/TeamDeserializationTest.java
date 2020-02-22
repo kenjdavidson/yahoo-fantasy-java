@@ -16,10 +16,15 @@ import kjd.yahoo.fantasy.data.team.Team;
 class TeamDeserializationTest extends ResourceDeserializationTest {
 
 	@Test
-	void testDeserialization() throws JsonParseException, JsonMappingException, IOException {	
-		Team t = deserialize("league_nfl.xml", Team.class);
+	void team_deserialization() throws JsonParseException, JsonMappingException, IOException {	
+		Team t = deserialize("team.xml", Team.class);
 		
-		assertEquals("380.l.1055255.t.4", t.getKey());
+		assertNotNull(t);
+		assertEquals("396.l.3768.t.7", t.getKey());
+		
+		assertNotNull(t.getManagers());
+		assertNotNull(t.getManagers().get(0));
+		assertEquals("Kenneth", t.getManagers().get(0).getNickname());
 	}
 
 }
