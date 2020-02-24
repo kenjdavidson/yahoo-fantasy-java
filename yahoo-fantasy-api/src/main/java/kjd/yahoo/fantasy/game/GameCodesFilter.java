@@ -15,7 +15,7 @@ public class GameCodesFilter extends Filter<GameCode[]> {
 	public String apply() {
 		return "game_codes=" 
 				+ Arrays.stream(getValue())
-					.map(type -> type.abbr)
+					.map(type -> type.name().toLowerCase())
 					.reduce("", (p, abbr) -> p + "," + abbr);			
 	}
 

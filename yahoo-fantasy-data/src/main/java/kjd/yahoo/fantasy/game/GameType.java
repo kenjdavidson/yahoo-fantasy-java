@@ -1,17 +1,18 @@
 package kjd.yahoo.fantasy.game;
 
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlEnumValue;
+import com.fasterxml.jackson.annotation.JsonValue;
 
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
-@XmlEnum
 public enum GameType {
-	@XmlEnumValue(value="full") FULL,
-	@XmlEnumValue(value="pickem-team") PICKEM_TEAM,
-	@XmlEnumValue(value="pickem-group") PICKEM_GROUP,
-	@XmlEnumValue(value="pickem-team-list") PICKEM_TEAM_LIST;
+	FULL("full"),
+	PICKEM_TEAM("pickem-team"),
+	PICKEM_GROUP("pickem-group"),
+	PICKEM_TEAM_LIST("pickem-team-list");
+	
+	@JsonValue
+	public final String value;
 	
 	public static final GameType[] VALUES = GameType.values();
 

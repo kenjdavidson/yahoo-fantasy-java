@@ -7,23 +7,12 @@ import kjd.yahoo.fantasy.game.GameType;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
-@Getter
 @RequiredArgsConstructor
 public enum WeeklyDeadline {
 	INTRADAY("intraday");
 	
-	public final String abbr;	
-	public static final WeeklyDeadline[] VALUES = WeeklyDeadline.values();
-	
 	@JsonValue
-	@JsonCreator
-	public static WeeklyDeadline fromAbbr(String abbr) {
-		for (WeeklyDeadline code : VALUES) {
-			if (code.getAbbr().equals(abbr)) {
-				return code;
-			}
-		}
-		
-		throw new EnumConstantNotPresentException(WeeklyDeadline.class, abbr);
-	}
+	public final String value;	
+	
+	public static final WeeklyDeadline[] VALUES = WeeklyDeadline.values();
 }

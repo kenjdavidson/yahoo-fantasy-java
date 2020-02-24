@@ -15,7 +15,7 @@ public class GameTypesFilter extends Filter<GameType[]> {
 	public String apply() {
 		return "game_types=" 
 				+ Arrays.stream(getValue())
-					.map(type -> type.abbr)
+					.map(type -> type.name().toLowerCase())
 					.reduce("", (p, abbr) -> p + "," + abbr);			
 	}
 

@@ -1,6 +1,10 @@
 package kjd.yahoo.fantasy.transaction;
 
+import com.fasterxml.jackson.annotation.JsonValue;
 
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
 public enum TransactionType {
 	UNKNOWN("n/a"),
 	ADD("add"),
@@ -8,20 +12,10 @@ public enum TransactionType {
 	ADD_DROP("add/drop"),
 	TRADE("trade"),
 	COMMISH("commish");
-	
-	public final String code;
-	TransactionType(String code) {
-		this.code = code;
-	}
+
+	@JsonValue
+	public final String value;
 	
 	private static final TransactionType[] VALUES = TransactionType.values();
-	public static final TransactionType ofCode(String code) {
-		for (TransactionType value : VALUES) {
-			if (value.code.equals(code)) {
-				return value;
-			}
-		}
-		
-		return TransactionType.UNKNOWN;
-	}
+
 }
