@@ -1,0 +1,21 @@
+package kjd.yahoo.fantasy.xml;
+
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.PropertyNamingStrategy;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+
+public class YahooXmlMapper extends XmlMapper {
+
+	private static final long serialVersionUID = -6609704562997855082L;
+
+	public static final YahooXmlMapper INSTANCE = new YahooXmlMapper();
+	
+	private YahooXmlMapper() {
+		super();
+		
+		this.registerModule(new YahooModule());
+		
+		this.setPropertyNamingStrategy(PropertyNamingStrategy.SNAKE_CASE);
+		this.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+	}
+}
