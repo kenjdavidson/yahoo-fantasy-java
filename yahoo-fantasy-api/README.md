@@ -1,7 +1,15 @@
 # Yahoo Fantasy API (JAVA)
 
-Provides request building and execution for the [Yahoo Fantasy API](https://developer.yahoo.com/fantasysports/guide/).  
+Provides request building and common requests for the [Yahoo Fantasy API](https://developer.yahoo.com/fantasysports/guide/).  
 
 ## Request Building
 
-Provides functionality for building dynamic requests.  Also provides a sampling of re-usable standard requests.  Requests can be used to provide Url, Method and Data to other Http libraries ([OAuth2RestTemplate](https://docs.spring.io/spring-security/oauth/apidocs/org/springframework/security/oauth2/client/OAuth2RestTemplate.html)) for example in the case of Spring.
+Custom and common requests are built and made available for any OAuth client which can access the Yahoo Fantasy API.  This allows any project to use their choice of communication method:
+
+#### [Scribe Java](https://github.com/scribejava/scribejava)
+
+TODO
+
+#### [Spring RestTemplate](https://spring.io/guides/tutorials/spring-boot-oauth2/)
+
+TODO
