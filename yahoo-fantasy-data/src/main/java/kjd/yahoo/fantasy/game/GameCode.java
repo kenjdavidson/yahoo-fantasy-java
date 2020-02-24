@@ -1,29 +1,23 @@
 package kjd.yahoo.fantasy.game;
 
+import javax.xml.bind.annotation.XmlEnum;
+import javax.xml.bind.annotation.XmlEnumValue;
+import javax.xml.bind.annotation.XmlValue;
+
 import com.fasterxml.jackson.annotation.JsonValue;
 
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
+@XmlEnum
 public enum GameCode {
-	NFL("nfl", "National Footbal League"),
-	NHL("nhl", "National Hockey League"),
-	MLB("mlb", "Major League Baseball"),
-	NBA("nba", "National Basketball Association");
+	@XmlEnumValue(value="nfl") NFL("National Footbal League"),
+	@XmlEnumValue(value="nhl") NHL("National Hockey League"),
+	@XmlEnumValue(value="mlb") MLB("Major League Baseball"),
+	@XmlEnumValue(value="nba") NBA("National Basketball Association");
 	
-	@JsonValue
-	public final String abbr;
 	public final String desc;
 	
 	public static final GameCode[] VALUES = GameCode.values();
 	
-	public static GameCode fromAbbr(String abbr) {
-		for (GameCode code : VALUES) {
-			if (code.abbr.equals(abbr)) {
-				return code;
-			}
-		}
-		
-		throw new EnumConstantNotPresentException(GameCode.class, abbr);
-	}
 }

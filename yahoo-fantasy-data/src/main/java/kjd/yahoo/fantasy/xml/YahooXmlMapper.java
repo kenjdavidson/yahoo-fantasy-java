@@ -3,6 +3,7 @@ package kjd.yahoo.fantasy.xml;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import com.fasterxml.jackson.module.jaxb.JaxbAnnotationModule;
 
 public class YahooXmlMapper extends XmlMapper {
 
@@ -13,7 +14,8 @@ public class YahooXmlMapper extends XmlMapper {
 	private YahooXmlMapper() {
 		super();
 		
-		this.registerModule(new YahooModule());
+		this.registerModule(new JaxbAnnotationModule());
+		this.registerModule(new YahooModule());		
 		
 		this.setPropertyNamingStrategy(PropertyNamingStrategy.SNAKE_CASE);
 		this.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
