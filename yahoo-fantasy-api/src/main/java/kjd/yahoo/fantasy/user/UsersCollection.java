@@ -4,8 +4,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import kjd.yahoo.fantasy.BooleanFilter;
-import kjd.yahoo.fantasy.Filter;
+import kjd.yahoo.fantasy.filter.BooleanFilter;
+import kjd.yahoo.fantasy.filter.Filter;
 
 public class UsersCollection {
 

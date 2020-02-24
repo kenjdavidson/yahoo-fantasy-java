@@ -1,4 +1,4 @@
-package kjd.yahoo.fantasy;
+package kjd.yahoo.fantasy.filter;
 
 public class BooleanFilter extends Filter<Boolean> {
 	

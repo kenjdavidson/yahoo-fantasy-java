@@ -1,4 +1,4 @@
-package kjd.yahoo.fantasy;
+package kjd.yahoo.fantasy.filter;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import kjd.yahoo.fantasy.BooleanFilter;
+import kjd.yahoo.fantasy.filter.BooleanFilter;
 import kjd.yahoo.fantasy.game.GameCode;
 
 class GamesCollectionTest {

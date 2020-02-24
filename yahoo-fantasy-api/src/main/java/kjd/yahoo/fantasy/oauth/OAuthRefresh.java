@@ -1,4 +1,4 @@
-package kjd.yahoo.fantasy;
+package kjd.yahoo.fantasy.oauth;
 
 /**
  * Provide configuration on when and how the Yahoo OAuth token is

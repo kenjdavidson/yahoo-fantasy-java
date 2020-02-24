@@ -5,15 +5,11 @@ import java.util.Map;
 import com.github.scribejava.core.model.OAuth2AccessToken;
 import com.github.scribejava.core.oauth.OAuth20Service;
 
-import kjd.yahoo.fantasy.Filter;
-import kjd.yahoo.fantasy.Resource;
+import kjd.yahoo.fantasy.ResourceRequestBuilder;
+import kjd.yahoo.fantasy.filter.Filter;
 import kjd.yahoo.fantasy.game.Game;
 
-public class GameResource extends Resource<Game> {
-
-	public GameResource(OAuth20Service service, OAuth2AccessToken token) {
-		super(service, token);
-	}
+public class GameResource extends ResourceRequestBuilder<Game> {
 
 	@Override
 	public String name() {

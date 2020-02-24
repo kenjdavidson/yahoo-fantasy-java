@@ -1,4 +1,4 @@
-package kjd.yahoo.fantasy;
+package kjd.yahoo.fantasy.oauth;
 
 public enum OAuthScope {
 	FSPW_R("fspt-r", "Fantasy Sports Read"),

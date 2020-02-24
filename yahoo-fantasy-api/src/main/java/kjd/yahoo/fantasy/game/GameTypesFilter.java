@@ -2,7 +2,7 @@ package kjd.yahoo.fantasy.game;
 
 import java.util.Arrays;
 
-import kjd.yahoo.fantasy.Filter;
+import kjd.yahoo.fantasy.filter.Filter;
 import kjd.yahoo.fantasy.game.GameType;
 
 public class GameTypesFilter extends Filter<GameType[]> {

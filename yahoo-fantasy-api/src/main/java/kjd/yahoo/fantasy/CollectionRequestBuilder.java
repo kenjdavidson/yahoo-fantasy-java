@@ -7,7 +7,9 @@ import java.util.Set;
 
 import com.github.scribejava.core.model.OAuthRequest;
 
-public abstract class Collection<T extends Collection<T>> {
+import kjd.yahoo.fantasy.filter.Filter;
+
+public abstract class CollectionRequestBuilder<T extends CollectionRequestBuilder<T>> {
 	
 	private static final String BASE_URL = "https://fantasysports.yahooapis.com/fantasy/v2/";
 	
@@ -41,14 +43,14 @@ public abstract class Collection<T extends Collection<T>> {
 	 * 	<li>Multi sub-resources build {@code /v2/collection;out=subresource,...}</li>
 	 * </ul>
 	 */
-	private Set<Collection<?>> subresources = new HashSet<>();
+	private Set<CollectionRequestBuilder<?>> subresources = new HashSet<>();
 	
 	/**
-	 * Creates a new {@link Collection} with the specified name.
+	 * Creates a new {@link CollectionRequestBuilder} with the specified name.
 	 * 
 	 * @param name
 	 */
-	public Collection(String name) {
+	public CollectionRequestBuilder(String name) {
 		this.name = name;
 	}
 	
@@ -60,25 +62,25 @@ public abstract class Collection<T extends Collection<T>> {
 	public abstract Map<String, Class<? extends Filter<?>>> getAvailableFilters();	
 	
 	/**
-	 * Adds a number of keys to the {@link Collection}.
+	 * Adds a number of keys to the {@link CollectionRequestBuilder}.
 	 * 
 	 * @param keys
 	 * @return
 	 */
-	public Collection<T> key(String key) {
+	public CollectionRequestBuilder<T> key(String key) {
 		this.keys.add(key);			
 		return this;
 	}
 	
 	/**
-	 * Adds a number of sub-resources to the {@link Collection}. 
+	 * Adds a number of sub-resources to the {@link CollectionRequestBuilder}. 
 	 * 
 	 * @param <T>
 	 * @param <R>
 	 * @param filters
 	 * @return
 	 */
-	public <F extends Filter<?>> Collection<T> filter(F filter) {
+	public <F extends Filter<?>> CollectionRequestBuilder<T> filter(F filter) {
 		if (!getAvailableFilters().containsKey(filter.getName()))
 			throw new IllegalArgumentException(filter.getName() + " is not a valid filter for " + this.getClass().getSimpleName());
 				
@@ -91,12 +93,12 @@ public abstract class Collection<T extends Collection<T>> {
 	}
 	
 	/**
-	 * Adds a sub-resource {@link Collection}.
+	 * Adds a sub-resource {@link CollectionRequestBuilder}.
 	 * 
 	 * @param subresource
 	 * @return
 	 */
-	public Collection<T> subresource(Collection<?> subresource) {
+	public CollectionRequestBuilder<T> subresource(CollectionRequestBuilder<?> subresource) {
 		this.subresources.add(subresource);
 		return this;
 	}

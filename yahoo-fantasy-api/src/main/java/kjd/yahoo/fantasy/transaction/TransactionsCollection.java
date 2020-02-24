@@ -4,10 +4,10 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import kjd.yahoo.fantasy.DateFilter;
-import kjd.yahoo.fantasy.Filter;
-import kjd.yahoo.fantasy.IntegerFilter;
-import kjd.yahoo.fantasy.StringFilter;
+import kjd.yahoo.fantasy.filter.DateFilter;
+import kjd.yahoo.fantasy.filter.Filter;
+import kjd.yahoo.fantasy.filter.IntegerFilter;
+import kjd.yahoo.fantasy.filter.StringFilter;
 
 public class TransactionsCollection {
 

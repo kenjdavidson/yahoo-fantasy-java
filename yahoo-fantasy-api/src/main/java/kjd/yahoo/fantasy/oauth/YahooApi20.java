@@ -1,4 +1,4 @@
-package kjd.yahoo.fantasy;
+package kjd.yahoo.fantasy.oauth;
 
 import java.io.OutputStream;
 

@@ -4,12 +4,12 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import kjd.yahoo.fantasy.BooleanFilter;
-import kjd.yahoo.fantasy.Collection;
-import kjd.yahoo.fantasy.Filter;
-import kjd.yahoo.fantasy.IntegerFilter;
+import kjd.yahoo.fantasy.CollectionRequestBuilder;
+import kjd.yahoo.fantasy.filter.BooleanFilter;
+import kjd.yahoo.fantasy.filter.Filter;
+import kjd.yahoo.fantasy.filter.IntegerFilter;
 
-public class GamesCollection extends Collection<GamesCollection> {
+public class GamesCollection extends CollectionRequestBuilder<GamesCollection> {
 	
 	private static Map<String, Class<? extends Filter<?>>> AVAIL_FILTERS;
 	
