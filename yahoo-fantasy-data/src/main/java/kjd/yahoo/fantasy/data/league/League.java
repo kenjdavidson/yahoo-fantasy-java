@@ -7,7 +7,6 @@ import java.util.regex.Pattern;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import kjd.yahoo.fantasy.data.Resource;
 import kjd.yahoo.fantasy.data.Subresource;
 import kjd.yahoo.fantasy.data.scoreboard.Scoreboard;
 import lombok.Getter;
@@ -18,7 +17,7 @@ import lombok.Setter;
  * <p>
  * <ul>
  * 	<li><strong>leagues;league_keys=key1;out=settings</strong> - {@link LeagueSettings}</li>
- * 	<li><strong>leagues;league_keys=key1;out=standings</strong> - {@link Standings}</li>
+ * 	<li><strong>leagues;league_keys=key1;out=standings</strong> - {@link TeamStandings}</li>
  * 	<li><strong>leagues;league_keys=key1;out=scoreboard</strong> - {@link Scoreboard}</li>
  * </ul>
  * <p>
@@ -33,7 +32,7 @@ import lombok.Setter;
  */
 @Setter
 @Getter
-public class League implements Resource {
+public class League {
 	
 	final String KEY_FORMAT = "^((\\d+)\\.l\\d+).(\\d+)$";
 	final Pattern KEY_PATTERN = Pattern.compile(KEY_FORMAT);

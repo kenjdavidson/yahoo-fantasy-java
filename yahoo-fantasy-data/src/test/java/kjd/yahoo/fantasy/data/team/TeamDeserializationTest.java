@@ -25,4 +25,10 @@ class TeamDeserializationTest extends ResourceDeserializationTest {
 		assertEquals("Kenneth", t.getManagers().get(0).getNickname());
 	}
 
+	@Test
+	void team_stats_points_deserialization() throws JsonParseException, JsonMappingException, IOException {
+		Team t = deserialize("team_stats.xml", Team.class);
+		
+		assertNotNull(t);
+	}
 }

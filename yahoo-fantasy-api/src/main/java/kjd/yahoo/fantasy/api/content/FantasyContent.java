@@ -1,4 +1,4 @@
-package kjd.yahoo.fantasy.data;
+package kjd.yahoo.fantasy.api.content;
 
 import javax.xml.bind.annotation.XmlAttribute;
 
@@ -15,7 +15,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class FantasyContent<T> {
+public abstract class FantasyContent<T> {
 
 	@XmlAttribute(namespace="xml",name="lang")
 	private String lang;

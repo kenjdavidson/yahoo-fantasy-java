@@ -3,6 +3,7 @@ package kjd.yahoo.fantasy.data.league;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
+import kjd.yahoo.fantasy.data.game.GameType;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
@@ -23,6 +24,6 @@ public enum WeeklyDeadline {
 			}
 		}
 		
-		return null;
+		throw new EnumConstantNotPresentException(WeeklyDeadline.class, abbr);
 	}
 }

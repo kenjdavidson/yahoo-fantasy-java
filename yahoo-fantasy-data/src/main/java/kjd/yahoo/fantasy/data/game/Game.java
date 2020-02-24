@@ -3,7 +3,6 @@ package kjd.yahoo.fantasy.data.game;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import kjd.yahoo.fantasy.data.Resource;
 import kjd.yahoo.fantasy.data.league.League;
 import kjd.yahoo.fantasy.data.player.Player;
 import lombok.Getter;
@@ -37,7 +36,7 @@ import lombok.Setter;
  */
 @Setter
 @Getter
-public class Game implements Resource {
+public class Game {
 
 	@JsonProperty(value="game_key")
 	private String key;
@@ -67,4 +66,5 @@ public class Game implements Resource {
 	private List<League> leagues;
 		
 	private List<Player> players;
+	
 }

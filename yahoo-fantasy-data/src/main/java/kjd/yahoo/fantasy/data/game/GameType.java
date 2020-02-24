@@ -6,9 +6,11 @@ import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 public enum GameType {
-	UNKNOWN(""),
-	FULL("full");
-
+	FULL("full"),
+	PICKEM_TEAM("pickem-team"),
+	PICKEM_GROUP("pickem-group"),
+	PICKEM_TEAM_LIST("pickem-team-list");
+	
 	@JsonValue
 	public final String abbr;
 	
@@ -21,6 +23,6 @@ public enum GameType {
 			}
 		}
 		
-		return GameType.UNKNOWN;
+		throw new EnumConstantNotPresentException(GameType.class, abbr);
 	}
 }

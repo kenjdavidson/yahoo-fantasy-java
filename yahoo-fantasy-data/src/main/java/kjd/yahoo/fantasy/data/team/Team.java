@@ -7,15 +7,15 @@ import java.util.regex.Matcher;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import kjd.yahoo.fantasy.data.Resource;
 import kjd.yahoo.fantasy.data.Subresource;
+import kjd.yahoo.fantasy.data.league.ScoringType;
 import kjd.yahoo.fantasy.data.scoreboard.Matchup;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class Team implements Resource {
+public class Team {
 
 	final String KEY_FORMAT = "^((\\d+)\\.l\\.(\\d+))\\.t\\.(\\d+)$";
 	final Pattern KEY_PATTERN = Pattern.compile(KEY_FORMAT);
@@ -44,7 +44,7 @@ public class Team implements Resource {
 	private boolean clinchedPlayoffs;
 	
 	@JsonProperty(value="league_scoring_type")
-	private String scoringType;
+	private ScoringType scoringType;
 	
 	@JsonProperty(value="has_draft_grade")
 	private boolean hasDraftGrade;
@@ -56,10 +56,12 @@ public class Team implements Resource {
 	private List<Manager> managers;
 	
 	@Subresource
-	private TeamRoster roster;
+	private Roster roster;
 	
+	@Subresource
 	private TeamStats teamStats;
 
+	@Subresource
 	private TeamPoints teamPoints;
 	
 	@Subresource
@@ -67,7 +69,6 @@ public class Team implements Resource {
 	
 	@Subresource
 	private Matchup matchup;
-	
 	
 	@JsonIgnore
 	public String getLeagueKey() {

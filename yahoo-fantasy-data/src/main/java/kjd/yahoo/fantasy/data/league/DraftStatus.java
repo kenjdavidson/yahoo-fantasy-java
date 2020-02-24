@@ -3,13 +3,13 @@ package kjd.yahoo.fantasy.data.league;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
+import kjd.yahoo.fantasy.data.game.GameType;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
 @Getter
 @RequiredArgsConstructor
 public enum DraftStatus {
-	UNKNOWN(""),
 	PRE_DRAFT("predraft"),
 	POST_DRAFT("postdraft");
 	
@@ -25,6 +25,6 @@ public enum DraftStatus {
 			}
 		}
 		
-		return DraftStatus.UNKNOWN;
+		throw new EnumConstantNotPresentException(DraftStatus.class, abbr);
 	}
 }

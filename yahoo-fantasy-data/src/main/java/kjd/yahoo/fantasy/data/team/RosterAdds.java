@@ -1,5 +1,6 @@
 package kjd.yahoo.fantasy.data.team;
 
+import kjd.yahoo.fantasy.data.CoverageType;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -7,10 +8,14 @@ import lombok.Setter;
 @Setter
 public class RosterAdds {
 
-	private int waiverPriority;
+	private CoverageType coverageType;
 	
-	private int numberOfMoves;
+	/**
+	 * Coverage value is based on the {@link CoverageType} and will be
+	 * either an Integer (season/week) or Date (date);
+	 */
+	private String coverageValue;
 	
-	private int numberOfTrades;
+	private int value;
 	
 }

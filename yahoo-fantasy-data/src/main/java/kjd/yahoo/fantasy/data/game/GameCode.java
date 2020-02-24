@@ -6,7 +6,6 @@ import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 public enum GameCode {
-	UNKNOWN("", "Unknown Game Code"),
 	NFL("nfl", "National Footbal League"),
 	NHL("nhl", "National Hockey League"),
 	MLB("mlb", "Major League Baseball"),
@@ -25,6 +24,6 @@ public enum GameCode {
 			}
 		}
 		
-		return GameCode.UNKNOWN;
+		throw new EnumConstantNotPresentException(GameCode.class, abbr);
 	}
 }

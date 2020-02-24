@@ -1,4 +1,4 @@
-package kjd.yahoo.fantasy.data.game;
+package kjd.yahoo.fantasy.api.collection;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -10,13 +10,15 @@ import org.junit.jupiter.api.Test;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
-import kjd.yahoo.fantasy.data.ResourceDeserializationTest;
+import kjd.yahoo.fantasy.api.CollectionDeserializationTest;
+import kjd.yahoo.fantasy.api.content.GamesContent;
+import kjd.yahoo.fantasy.data.game.Game;
 
-class GamesCollectionTest extends ResourceDeserializationTest {
+class GamesCollectionTest extends CollectionDeserializationTest {
 
 	@Test
 	void test_leagueContentDeserialization() throws JsonParseException, JsonMappingException, IOException {
-		GamesCollection gc = deserialize("nfl_games_collection.xml", GamesCollection.class);
+		GamesContent gc = deserialize("nfl_games_collection.xml", GamesContent.class);
 				
 		assertNotNull(gc);
 		assertNotNull(gc.getGames());

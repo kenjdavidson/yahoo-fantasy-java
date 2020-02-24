@@ -7,7 +7,6 @@ import javax.xml.bind.annotation.XmlElementWrapper;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import kjd.yahoo.fantasy.data.Resource;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -31,7 +30,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class Player implements Resource {
+public class Player {
 
 	@JsonProperty(value="player_key")
 	private String key;
