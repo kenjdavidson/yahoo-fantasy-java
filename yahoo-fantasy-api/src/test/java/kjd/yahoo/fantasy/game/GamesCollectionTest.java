@@ -27,7 +27,7 @@ class GamesCollectionTest {
 	@Test
 	void test_games_collection() {
 		GamesCollection gc = new GamesCollection();
-		String url = gc.buildUrl();
+		String url = gc.url("");
 		
 		assertEquals("https://fantasysports.yahooapis.com/fantasy/v2", url);
 	}
