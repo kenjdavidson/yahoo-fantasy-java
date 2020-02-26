@@ -6,7 +6,7 @@ public class StringFilter extends Filter<String[]> {
 
 	private String name;
 	
-	public StringFilter(String name, String[] value) {
+	public StringFilter(String name, String...value) {
 		super(name, value);
 	}
 

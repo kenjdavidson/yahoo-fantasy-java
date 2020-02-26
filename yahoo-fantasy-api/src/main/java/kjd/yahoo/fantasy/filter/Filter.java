@@ -1,5 +1,6 @@
 package kjd.yahoo.fantasy.filter;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
 /**
@@ -12,6 +13,7 @@ import lombok.Getter;
  * @param <T>
  */
 @Getter
+@EqualsAndHashCode(of = {"name", "value"})
 public abstract class Filter<T> {
 
 	private String name;
@@ -23,5 +25,7 @@ public abstract class Filter<T> {
 	}
 	
 	abstract public String apply();
+	
+	
 	
 }

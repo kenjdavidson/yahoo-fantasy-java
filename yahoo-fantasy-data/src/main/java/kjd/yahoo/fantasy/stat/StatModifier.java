@@ -13,7 +13,7 @@ import lombok.Getter;
 @Setter
 public class StatModifier {
 	
-	@JsonProperty(value="stat_id")
+	@JsonProperty("stat_id")
 	private int id;
 	
 	private double value;

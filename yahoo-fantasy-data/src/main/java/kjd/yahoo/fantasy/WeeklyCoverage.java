@@ -14,8 +14,8 @@ public class WeeklyCoverage implements Coverage<Integer> {
 	
 	@JsonCreator
 	public WeeklyCoverage(
-			@JsonProperty(value="coverageType") CoverageType type,
-			@JsonProperty(value="week") Integer week) {
+			@JsonProperty("coverageType") CoverageType type,
+			@JsonProperty("week") Integer week) {
 		this.type = type;
 		this.value = week;
 	}

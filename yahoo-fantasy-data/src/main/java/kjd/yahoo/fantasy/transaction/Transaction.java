@@ -35,10 +35,10 @@ import lombok.Setter;
 @Setter
 public class Transaction {
 
-	@JsonProperty(value="transaction_key")
+	@JsonProperty("transaction_key")
 	private String key;
 	
-	@JsonProperty(value="transaction_id")
+	@JsonProperty("transaction_id")
 	private long id;
 	
 	private String type;

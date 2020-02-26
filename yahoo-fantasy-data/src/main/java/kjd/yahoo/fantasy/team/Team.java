@@ -20,10 +20,10 @@ public class Team {
 	final String KEY_FORMAT = "^((\\d+)\\.l\\.(\\d+))\\.t\\.(\\d+)$";
 	final Pattern KEY_PATTERN = Pattern.compile(KEY_FORMAT);
 	
-	@JsonProperty(value="team_key")
+	@JsonProperty("team_key")
 	private String key;
 	
-	@JsonProperty(value="team_id")
+	@JsonProperty("team_id")
 	private long id;
 	
 	private String name;
@@ -40,13 +40,13 @@ public class Team {
 	
 	private RosterAdds rosterAdds;
 	
-	@JsonProperty(value="clinched_playoffs")
+	@JsonProperty("clinched_playoffs")
 	private boolean clinchedPlayoffs;
 	
-	@JsonProperty(value="league_scoring_type")
+	@JsonProperty("league_scoring_type")
 	private ScoringType scoringType;
 	
-	@JsonProperty(value="has_draft_grade")
+	@JsonProperty("has_draft_grade")
 	private boolean hasDraftGrade;
 	
 	private String draftGrade;

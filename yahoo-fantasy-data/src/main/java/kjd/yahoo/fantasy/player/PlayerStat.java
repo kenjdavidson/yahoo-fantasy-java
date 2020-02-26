@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 public class PlayerStat {
 
-	@JsonProperty(value="stat_id")
+	@JsonProperty("stat_id")
 	private long id;
 	
 	private double value;

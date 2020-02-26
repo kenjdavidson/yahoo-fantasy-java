@@ -38,10 +38,10 @@ import lombok.Setter;
 @Getter
 public class Game {
 
-	@JsonProperty(value="game_key")
+	@JsonProperty("game_key")
 	private String key;
 	
-	@JsonProperty(value="game_id")
+	@JsonProperty("game_id")
 	private long id;
 	
 	private String name;
@@ -54,13 +54,13 @@ public class Game {
 	
 	private int season;
 	
-	@JsonProperty(value="is_registration_over")
+	@JsonProperty("is_registration_over")
 	private boolean registrationOver;
 	
-	@JsonProperty(value="is_game_over")
+	@JsonProperty("is_game_over")
 	private boolean gameOver;
 	
-	@JsonProperty(value="is_offseason")
+	@JsonProperty("is_offseason")
 	private boolean offseason;
 	
 	private List<League> leagues;

@@ -9,14 +9,14 @@ import lombok.Setter;
 @Setter
 public class Manager {
 
-	@JsonProperty(value="manager_id")
+	@JsonProperty("manager_id")
 	private long id;
 	
 	private String nickname;
 	
 	private String guid;
 	
-	@JsonProperty(value="is_commissioner")
+	@JsonProperty("is_commissioner")
 	private boolean commissioner;
 	
 	private String email;

@@ -16,8 +16,8 @@ public class DailyCoverage implements Coverage<Date> {
 	
 	@JsonCreator
 	public DailyCoverage(
-			@JsonProperty(value="coverageType") CoverageType type,
-			@JsonProperty(value="date") Date date) {
+			@JsonProperty("coverageType") CoverageType type,
+			@JsonProperty("date") Date date) {
 		this.type = type;
 		this.value = date;
 	}

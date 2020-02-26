@@ -7,7 +7,7 @@ import kjd.yahoo.fantasy.game.GameType;
 
 public class GameTypesFilter extends Filter<GameType[]> {
 
-	public GameTypesFilter(GameType[] value) {
+	public GameTypesFilter(GameType... value) {
 		super("game_types", value);
 	}
 

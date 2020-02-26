@@ -37,10 +37,10 @@ public class League {
 	final String KEY_FORMAT = "^((\\d+)\\.l\\d+).(\\d+)$";
 	final Pattern KEY_PATTERN = Pattern.compile(KEY_FORMAT);
 
-	@JsonProperty(value="league_key")
+	@JsonProperty("league_key")
 	private String key;
 	
-	@JsonProperty(value="league_id")
+	@JsonProperty("league_id")
 	private long id;
 	
 	private String name;
@@ -63,23 +63,23 @@ public class League {
 	
 	private String leagueType;
 	
-	@JsonProperty(value="renew")
+	@JsonProperty("renew")
 	private String renewKey;
 	
-	@JsonProperty(value="renewed")
+	@JsonProperty("renewed")
 	private String rewnewedKey;
 	
 	private String irisGroupChatId;
 	
 	private String shortInvitationUrl;
 	
-	@JsonProperty(value="allow_add_to_dl_extra_pos")
+	@JsonProperty("allow_add_to_dl_extra_pos")
 	private boolean addToExtraPosition;
 	
-	@JsonProperty(value="is_pro_league")
+	@JsonProperty("is_pro_league")
 	private boolean proLeague;
 	
-	@JsonProperty(value="is_cash_league")
+	@JsonProperty("is_cash_league")
 	private boolean cashLeague;
 	
 	private int currentWeek;
@@ -96,7 +96,7 @@ public class League {
 	
 	private int season;
 	
-	@JsonProperty(value="is_finished")
+	@JsonProperty("is_finished")
 	private boolean finished;
 	
 	@Subresource

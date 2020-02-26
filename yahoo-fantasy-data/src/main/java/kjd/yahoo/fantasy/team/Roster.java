@@ -27,7 +27,7 @@ public class Roster {
 	
 	private Date date;
 	
-	@JsonProperty(value="is_editable")
+	@JsonProperty("is_editable")
 	private boolean editable;
 	
 	@XmlElementWrapper(name="players")

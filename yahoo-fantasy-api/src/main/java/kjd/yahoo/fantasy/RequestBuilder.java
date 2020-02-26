@@ -23,34 +23,48 @@ import kjd.yahoo.fantasy.filter.Filter;
  */
 public abstract class RequestBuilder<T> {
 	
-	private static final String BASE_URL = "https://fantasysports.yahooapis.com/fantasy/v2/";
-	
 	private Map<String,Filter<?>> filters = new HashMap<>();
 	private Set<RequestBuilder<?>> subresources = new HashSet<>();
 	
 	public <F extends Filter<?>> RequestBuilder<T> filter(F filter) {
 		if (!availableFilters().containsKey(filter.getName()))
-			throw new IllegalArgumentException(filter.getName() + " is not a valid filter for " + this.getClass().getSimpleName());
+			throw new IllegalArgumentException(filter.getName() 
+					+ " is not a valid filter for " + this.getClass().getSimpleName());
 				
 		Class<?> allowed = availableFilters().get(filter.getName());
 		if (!filter.getClass().isAssignableFrom(allowed))
-			throw new IllegalArgumentException(filter.getClass().getSimpleName() + " is not a valid filter for " + filter.getName());
+			throw new IllegalArgumentException(filter.getClass().getSimpleName() 
+					+ " is not a valid filter for " + filter.getName());
 			
 		this.filters.put(filter.getName(), filter);		
 		return this;		
 	}
 	
+	protected Map<String,Filter<?>> filters() {
+		return filters;
+	}
+	
 	public RequestBuilder<T> subresource(RequestBuilder<?> subresource) {
+		if (!availableSubresources().containsKey(subresource.name())) 
+			throw new IllegalArgumentException(subresource.name() 
+					+ " is not a valid subresource for " + this.getClass().getSimpleName());
+		
+		Class<?> allowed = availableSubresources().get(subresource.name());
+		if (!subresource.getClass().isAssignableFrom(allowed))
+			throw new IllegalArgumentException(subresource.name()
+					+ " is not a valid subresource for " + subresource.name());
+			
 		this.subresources.add(subresource);
 		return this;
 	}
 	
-	public abstract String name();
-	
-	public abstract Map<String, Class<? extends Filter<?>>> availableFilters();
-	
-	public String url(String key) {
-		return BASE_URL + name();
+	protected Set<RequestBuilder<?>> subresources() {
+		return subresources;
 	}
+			
+	public abstract String name();
+	public abstract String path();
+	public abstract Map<String, Class<? extends RequestBuilder<?>>> availableSubresources(); 
+	public abstract Map<String, Class<? extends Filter<?>>> availableFilters();
 	 
 }

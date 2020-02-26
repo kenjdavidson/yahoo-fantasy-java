@@ -13,7 +13,7 @@ public class ProfileImage {
 	
 	private int width;
 	
-	@JsonProperty(value="imageUrl")
+	@JsonProperty("imageUrl")
 	private int imageUrl;
 	
 	private String size;

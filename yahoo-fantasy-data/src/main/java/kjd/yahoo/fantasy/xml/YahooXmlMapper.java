@@ -11,7 +11,7 @@ public class YahooXmlMapper extends XmlMapper {
 
 	public static final YahooXmlMapper INSTANCE = new YahooXmlMapper();
 	
-	private YahooXmlMapper() {
+	protected YahooXmlMapper() {
 		super();
 		
 		this.registerModule(new JaxbAnnotationModule());

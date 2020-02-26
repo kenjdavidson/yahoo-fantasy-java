@@ -26,10 +26,10 @@ public class Matchup {
 	
 	private String status;
 	
-	@JsonProperty(value="is_playoffs")
+	@JsonProperty("is_playoffs")
 	private boolean playoffs;
 	
-	@JsonProperty(value="is_consolation")
+	@JsonProperty("is_consolation")
 	private boolean consolation;
 	
 	@XmlElementWrapper(name="stat_winners")

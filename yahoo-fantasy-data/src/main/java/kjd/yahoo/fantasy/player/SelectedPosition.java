@@ -23,7 +23,7 @@ public class SelectedPosition {
 	
 	private String position;
 	
-	@JsonProperty(value="is_flex")
+	@JsonProperty("is_flex")
 	private boolean flex;
 	
 }

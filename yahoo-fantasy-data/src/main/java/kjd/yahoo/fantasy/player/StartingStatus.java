@@ -21,6 +21,6 @@ public class StartingStatus {
 	
 	private Date date;
 	
-	@JsonProperty(value="is_starting")
+	@JsonProperty("is_starting")
 	private boolean starting;
 }

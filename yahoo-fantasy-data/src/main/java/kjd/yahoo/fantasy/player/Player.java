@@ -32,10 +32,10 @@ import lombok.Setter;
 @Setter
 public class Player {
 
-	@JsonProperty(value="player_key")
+	@JsonProperty("player_key")
 	private String key;
 	
-	@JsonProperty(value="player_id")
+	@JsonProperty("player_id")
 	private long id;
 	
 	private PlayerName name;
@@ -44,10 +44,10 @@ public class Player {
 	
 	private String editorialTeamKey;
 	
-	@JsonProperty(value="editorial_team_full_name")
+	@JsonProperty("editorial_team_full_name")
 	private String teamName;
 	
-	@JsonProperty(value="editorial_team_abbr")
+	@JsonProperty("editorial_team_abbr")
 	private String teamAbbr;
 	
 	@XmlElementWrapper(name="bye_weeks")
@@ -61,7 +61,7 @@ public class Player {
 	
 	private String imageUrl;
 	
-	@JsonProperty(value="is_undroppable")
+	@JsonProperty("is_undroppable")
 	private boolean undroppable;
 	
 	private String positionType;
@@ -70,10 +70,10 @@ public class Player {
 	
 	private List<String> eligiblePositions;
 	
-	@JsonProperty(value="has_player_notes")
+	@JsonProperty("has_player_notes")
 	private boolean playerNotes;
 	
-	@JsonProperty(value="player_notes_last_timestamp")
+	@JsonProperty("player_notes_last_timestamp")
 	private Date playerNotesDate;
 	
 	private SelectedPosition selectedPosition;

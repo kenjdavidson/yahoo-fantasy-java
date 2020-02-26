@@ -4,14 +4,16 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+import kjd.yahoo.fantasy.CollectionBuilder;
+import kjd.yahoo.fantasy.RequestBuilder;
 import kjd.yahoo.fantasy.filter.DateFilter;
 import kjd.yahoo.fantasy.filter.Filter;
 import kjd.yahoo.fantasy.filter.IntegerFilter;
 import kjd.yahoo.fantasy.filter.StringFilter;
 
-public class PlayersCollection {
+public class PlayersCollection extends CollectionBuilder<Player>{
 
-	private static Map<String, Class<? extends Filter<?>>> AVAIL_FILTERS;
+	private static Map<String, Class<? extends Filter<?>>> FILTERS;
 	
 	static {
 		HashMap<String, Class<? extends Filter<?>>> filters 
@@ -27,7 +29,23 @@ public class PlayersCollection {
 		filters.put("start", IntegerFilter.class);
 		filters.put("count", IntegerFilter.class);
 		
-		AVAIL_FILTERS = Collections.unmodifiableMap(filters);
+		FILTERS = Collections.unmodifiableMap(filters);
+	}
+
+	@Override
+	public String name() {
+		return "players";
+	}
+
+	@Override
+	public Map<String, Class<? extends RequestBuilder<?>>> availableSubresources() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Map<String, Class<? extends Filter<?>>> availableFilters() {
+		return FILTERS;
 	}
 	
 }

@@ -24,36 +24,36 @@ public class LeagueSettings {
 	
 	private String scoringType;
 	
-	@JsonProperty(value="uses_playoff")
+	@JsonProperty("uses_playoff")
 	private boolean usesPlayoff;
 	
-	@JsonProperty(value="has_playoff_consolation_games")
+	@JsonProperty("has_playoff_consolation_games")
 	private boolean hasConsolationGames;
 			
 	private int playoffStartWeek;
 		
-	@JsonProperty(value="uses_playoff_reseeding")
+	@JsonProperty("uses_playoff_reseeding")
 	private boolean playoffReseeding;
 	
-	@JsonProperty(value="uses_lock_eliminated_teams")
+	@JsonProperty("uses_lock_eliminated_teams")
 	private boolean lockEliminatedTeams;
 		
 	private int numPlayoffTeams;
 		
-	@JsonProperty(value="num_playoff_consolation_teams")
+	@JsonProperty("num_playoff_consolation_teams")
 	private int numConsolationTeams;
 	
-	@JsonProperty(value="has_multiweek_championship")
+	@JsonProperty("has_multiweek_championship")
 	private boolean multiweekChampionship;
 	
-	@JsonProperty(value="uses_roster_import")
+	@JsonProperty("uses_roster_import")
 	private boolean rosterImport;
 	
 	private String waiverType;
 	
 	private String waiverRule;
 		
-	@JsonProperty(value="use_faab")
+	@JsonProperty("use_faab")
 	private boolean useFaab;
 		
 	private Date draftTime;
@@ -76,7 +76,7 @@ public class LeagueSettings {
 		
 	private String cantCutList;
 	
-	@JsonProperty(value="can_trade_draft_picks")
+	@JsonProperty("can_trade_draft_picks")
 	private boolean tradeDraftPicks;
 
 	@XmlElementWrapper(name="roster_positions")
@@ -88,13 +88,13 @@ public class LeagueSettings {
 	
 	private int maxAdds;
 	
-	@JsonProperty(value="is_pickem_enabled")
+	@JsonProperty("is_pickem_enabled")
 	private boolean pickemEnabled; 
 	
-	@JsonProperty(value="is_fractional_points")
+	@JsonProperty("is_fractional_points")
 	private boolean fractionalPoints;
 	
-	@JsonProperty(value="is_negative_points")
+	@JsonProperty("is_negative_points")
 	private boolean negativePoints;
 	
 }
