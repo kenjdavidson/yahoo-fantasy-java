@@ -27,8 +27,7 @@ public class PlayersCollection extends CollectionBuilder<Player>{
 		filters.put("sort_date", DateFilter.class);
 		filters.put("sort_week", IntegerFilter.class);
 		filters.put("start", IntegerFilter.class);
-		filters.put("count", IntegerFilter.class);
-		
+		filters.put("count", IntegerFilter.class);		
 		FILTERS = Collections.unmodifiableMap(filters);
 	}
 
