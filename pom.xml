@@ -24,6 +24,7 @@
 		<lombok.version>1.18.12</lombok.version>
 		<fasterxml.version>2.10.1</fasterxml.version>
 		<slf4j.version>1.7.25</slf4j.version>
+    <maven.release.plugin.version>3.6.1</maven.release.plugin.version>
 	</properties>
 
 	<dependencyManagement>
@@ -82,4 +83,27 @@
 		<system>github</system>
 		<url>https://github.com/kenjdavidson/yahoo-fantasy-java/issues</url>
 	</issueManagement>
+
+	<build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>com.github.danielflower.mavenplugins</groupId>
+          <artifactId>multi-module-maven-release-plugin</artifactId>
+          <version>${maven.release.plugin.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>com.github.danielflower.mavenplugins</groupId>
+        <artifactId>multi-module-maven-release-plugin</artifactId>
+        <configuration>
+            <releaseGoals>
+                <releaseGoal>deploy</releaseGoal>
+            </releaseGoals>
+        </configuration>
+      </plugin>
+    </plugins>
+	</build>
 </project>
