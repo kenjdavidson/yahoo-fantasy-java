@@ -2,8 +2,6 @@ package kjd.yahoo.fantasy.filter;
 
 import java.util.Arrays;
 
-import kjd.yahoo.fantasy.game.GameCode;
-
 public class IntegerFilter extends Filter<Integer[]> {
 
 	public IntegerFilter(String name, Integer[] value) {

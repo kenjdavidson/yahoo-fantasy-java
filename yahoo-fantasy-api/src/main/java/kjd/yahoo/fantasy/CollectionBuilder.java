@@ -11,7 +11,7 @@ public abstract class CollectionBuilder<T> extends RequestBuilder<T> {
 		return url.toString();
 	}
 	
-	private void applyFilters(StringBuilder url) {
+	protected void applyFilters(StringBuilder url) {
 		if (filters().size() > 0) {
 			String filterString = filters().entrySet().stream()
 					.map(e -> e.getValue().apply())
@@ -20,7 +20,7 @@ public abstract class CollectionBuilder<T> extends RequestBuilder<T> {
 		}
 	}
 	
-	private void applySubresources(StringBuilder url) {
+	protected void applySubresources(StringBuilder url) {
 		Set<RequestBuilder<?>> subs = subresources();
 		if (subs.size() == 1) {
 			String subsStr = subs.stream()

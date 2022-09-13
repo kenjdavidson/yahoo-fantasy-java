@@ -5,7 +5,6 @@ import java.util.List;
 
 import javax.xml.bind.annotation.XmlElementWrapper;
 
-import kjd.yahoo.fantasy.Coverage;
 import kjd.yahoo.fantasy.CoverageType;
 import lombok.Setter;
 import lombok.Getter;

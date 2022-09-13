@@ -7,7 +7,6 @@ import java.net.URL;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.github.scribejava.core.model.OAuth2AccessToken;
 
 public 
 class YahooOAuthTokenReader {
@@ -22,7 +21,7 @@ class YahooOAuthTokenReader {
 		this.mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 	}	
 	
-	YahooOAuthToken read(String uri) throws IOException {
+	public YahooOAuthToken read(String uri) throws IOException {
 		ClassLoader cl = getClass().getClassLoader();
 		URL url = cl.getResource("token.json");
 		YahooOAuthToken token = null;

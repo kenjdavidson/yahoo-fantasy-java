@@ -16,6 +16,6 @@ public enum TransactionType {
 	@JsonValue
 	public final String value;
 	
-	private static final TransactionType[] VALUES = TransactionType.values();
+	public static final TransactionType[] VALUES = TransactionType.values();
 
 }

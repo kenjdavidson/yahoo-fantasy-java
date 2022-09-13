@@ -5,7 +5,6 @@ import java.util.List;
 import javax.xml.bind.annotation.XmlElementWrapper;
 
 import kjd.yahoo.fantasy.FantasyContent;
-import kjd.yahoo.fantasy.user.User;
 import lombok.Getter;
 import lombok.Setter;
 

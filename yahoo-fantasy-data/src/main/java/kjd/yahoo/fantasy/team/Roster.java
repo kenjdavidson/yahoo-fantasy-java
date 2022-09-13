@@ -7,7 +7,6 @@ import javax.xml.bind.annotation.XmlElementWrapper;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import kjd.yahoo.fantasy.Coverage;
 import kjd.yahoo.fantasy.CoverageType;
 import kjd.yahoo.fantasy.Subresource;
 import kjd.yahoo.fantasy.player.Player;

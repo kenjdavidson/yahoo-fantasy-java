@@ -2,7 +2,6 @@ package kjd.yahoo.fantasy.player;
 
 import java.util.Date;
 
-import kjd.yahoo.fantasy.Coverage;
 import kjd.yahoo.fantasy.CoverageType;
 import lombok.Getter;
 import lombok.Setter;

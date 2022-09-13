@@ -10,7 +10,6 @@ import org.junit.jupiter.api.Test;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import kjd.yahoo.fantasy.ResourceDeserializationTest;
-import kjd.yahoo.fantasy.game.Game;
 
 public class GameDeserializationTest extends ResourceDeserializationTest {
 	

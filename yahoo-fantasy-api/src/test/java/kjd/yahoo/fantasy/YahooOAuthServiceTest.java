@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import com.github.scribejava.core.builder.ServiceBuilder;
@@ -13,18 +14,22 @@ import com.github.scribejava.core.model.OAuth2AccessToken;
 import com.github.scribejava.core.oauth.OAuth20Service;
 
 import kjd.yahoo.fantasy.oauth.YahooApi20;
+import kjd.yahoo.fantasy.oauth.YahooOAuthTokenReader;
 
+@Disabled
 class YahooOAuthServiceTest {
 	
 	static String clientId;
 	static String clientSecret;
 	static String refreshToken;
+	static OAuth2AccessToken token;
 	
 	@BeforeAll
-	static void beforeAll() {
+	static void beforeAll() throws IOException {
 		clientId = System.getenv("YFS_CLIENT_ID");
 		clientSecret = System.getenv("YFS_CLIENT_SECRET");
 		refreshToken = System.getenv("YFS_REFRESH_TOKEN");
+		token = YahooOAuthTokenReader.INSTANCE.read("token.json");
 	}
 	
 	@Test
@@ -46,9 +51,9 @@ class YahooOAuthServiceTest {
 				.callback("oob")
 				.build(YahooApi20.instance());
 		
-		OAuth2AccessToken token = service.refreshAccessToken(refreshToken);
-		System.out.println(token.getRawResponse());
-		System.out.println(token.getRefreshToken());
+		OAuth2AccessToken oauthToken = service.refreshAccessToken(refreshToken);
+		assert(oauthToken.getAccessToken()).equals(token.getAccessToken());
+		assert(oauthToken.getRefreshToken()).equals(token.getAccessToken());
 	}
 
 }

@@ -6,9 +6,14 @@
 	<groupId>kjd.yahoo</groupId>
 	<artifactId>yahoo-fantasy</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>yahoo-fantasy</name>
 	<url>http://maven.apache.org</url>
+
+	<modules>
+		<module>yahoo-fantasy-data</module>
+		<module>yahoo-fantasy-api</module>
+	</modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -45,7 +50,6 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<!-- only required when using parameterized tests -->
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-params</artifactId>
 			<scope>test</scope>
@@ -74,17 +78,8 @@
 		<url>https://www.kenjdavidson.com</url>
 	</organization>
 
-	<scm>
-		<url>https://github.com/kenjdavidson/yahoofantasy-data</url>
-		<developerConnection>kenjdavidson</developerConnection>
-	</scm>
-
 	<issueManagement>
-		<system>git</system>
-		<url>https://github.com/kenjdavidson/yahoofantasy-data/issues</url>
+		<system>github</system>
+		<url>https://github.com/kenjdavidson/yahoo-fantasy-java/issues</url>
 	</issueManagement>
-	<modules>
-		<module>yahoo-fantasy-data</module>
-		<module>yahoo-fantasy-api</module>
-	</modules>
 </project>

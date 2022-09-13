@@ -1,15 +1,13 @@
 package kjd.yahoo.fantasy.game;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
 
 import kjd.yahoo.fantasy.filter.BooleanFilter;
 import kjd.yahoo.fantasy.filter.IntegerFilter;
-import kjd.yahoo.fantasy.game.GameCode;
 
 class GamesCollectionTest {
 
