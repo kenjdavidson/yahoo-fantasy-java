@@ -99,9 +99,13 @@
         <groupId>com.github.danielflower.mavenplugins</groupId>
         <artifactId>multi-module-maven-release-plugin</artifactId>
         <configuration>
-            <releaseGoals>
-                <releaseGoal>deploy</releaseGoal>
-            </releaseGoals>
+          <pullTags>true</pullTags>
+          <pushTags>true</pushTags>
+          <releaseGoals>
+            <releaseGoal>clean</releaseGoal>
+            <releaseGoal>install</releaseGoal>
+          </releaseGoals>
+          <serverId>github</serverId>
         </configuration>
       </plugin>
     </plugins>
