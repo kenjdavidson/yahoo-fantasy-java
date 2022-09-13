@@ -102,7 +102,6 @@
             <releaseGoals>
                 <releaseGoal>deploy</releaseGoal>
             </releaseGoals>
-            <disableSshAgent>true</disableSshAgent>
         </configuration>
       </plugin>
     </plugins>
