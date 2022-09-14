@@ -84,6 +84,20 @@
 		<url>https://github.com/kenjdavidson/yahoo-fantasy-java/issues</url>
 	</issueManagement>
 
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>Yahoo Fantasy Maven Packages</name>
+      <url>https://mavne.pkg.github.com/kenjdavidson/yahoo-fantasy-java</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshot>
+        <enabled>true</enabled>
+      </snapshot>
+    </repository>
+  </distributionManagement>
+
 	<build>
     <pluginManagement>
       <plugins>
