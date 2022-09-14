@@ -19,6 +19,14 @@
 		<scribe.version>6.9.0</scribe.version>
 		<yahoo.data.version>1.0-SNAPSHOT</yahoo.data.version>
 	</properties>
+
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>Yahoo Fantasy Maven Packages</name>
+      <url>https://mavne.pkg.github.com/kenjdavidson/yahoo-fantasy-java</url>
+    </repository>
+  </distributionManagement>
 	
 	<dependencies>
 		<dependency>
@@ -38,22 +46,4 @@
 			<version>${yahoo.data.version}</version>
 		</dependency>
 	</dependencies>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>com.github.danielflower.mavenplugins</groupId>
-        <artifactId>multi-module-maven-release-plugin</artifactId>
-        <configuration>
-          <pullTags>true</pullTags>
-          <pushTags>true</pushTags>
-          <releaseGoals>
-            <releaseGoal>clean</releaseGoal>
-            <releaseGoal>install</releaseGoal>
-          </releaseGoals>
-          <serverId>github</serverId>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
 </project>
