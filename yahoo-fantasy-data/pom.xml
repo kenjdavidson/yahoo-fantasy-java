@@ -15,4 +15,20 @@
   
   <dependencies>
   </dependencies>
+
+  <plugins>
+    <plugin>
+      <groupId>com.github.danielflower.mavenplugins</groupId>
+      <artifactId>multi-module-maven-release-plugin</artifactId>
+      <configuration>
+        <pullTags>true</pullTags>
+        <pushTags>true</pushTags>
+        <releaseGoals>
+          <releaseGoal>clean</releaseGoal>
+          <releaseGoal>install</releaseGoal>
+        </releaseGoals>
+        <serverId>github</serverId>
+      </configuration>
+    </plugin>
+  </plugins>
 </project>
