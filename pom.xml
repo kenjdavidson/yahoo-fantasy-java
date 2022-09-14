@@ -88,12 +88,12 @@
     <repository>
       <id>github</id>
       <name>Yahoo Fantasy Maven Packages</name>
-      <url>https://mavne.pkg.github.com/kenjdavidson/yahoo-fantasy-java</url>
+      <url>https://maven.pkg.github.com/kenjdavidson/yahoo-fantasy-java</url>
     </repository>
     <snapshotRepository>
       <id>github</id>
       <name>Yahoo Fantasy Maven Packages</name>
-      <url>https://mavne.pkg.github.com/kenjdavidson/yahoo-fantasy-java</url>
+      <url>https://maven.pkg.github.com/kenjdavidson/yahoo-fantasy-java</url>
     </snapshotRepository>
   </distributionManagement>
 

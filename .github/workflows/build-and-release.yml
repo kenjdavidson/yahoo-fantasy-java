@@ -19,6 +19,6 @@ jobs:
         server-id: 'github'
     
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn -B deploy
+      run: mvn -B releaser:release
       env:
         GITHUB_TOKEN: ${{ github.token }}
