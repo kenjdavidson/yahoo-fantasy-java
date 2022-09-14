@@ -84,6 +84,14 @@
 		<url>https://github.com/kenjdavidson/yahoo-fantasy-java/issues</url>
 	</issueManagement>
 
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>Yahoo Fantasy Maven Packages</name>
+      <url>https://mavne.pkg.github.com/kenjdavidson/yahoo-fantasy-java</url>
+    </repository>
+  </distributionManagement>
+
 	<build>
     <pluginManagement>
       <plugins>
@@ -114,6 +122,15 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M5</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+        <inherited>false</inherited>
       </plugin>
     </plugins>
 	</build>
